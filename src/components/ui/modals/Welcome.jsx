@@ -3,27 +3,24 @@ import styled from 'styled-components'
 import { Logo } from '../Logo'
 import { Title } from '../Title'
 import { Text } from '../Text'
-import { ModalTemplate } from '../../templates'
 import { Button } from '../buttons'
 import { theme } from '../../../styles'
 
 export const WelcomeModal = ({ onClick }) => {
 	return (
-		<ModalTemplate>
-			<Component>
-				<Wrapper>
-					<Logo width={224} height={32} />
-					<Content>
-						<Title>Welcome to Macaron!</Title>
-						<Text size={'medium'}>
-							Thanks for signing up! <br />
-							We’re happy to see you here
-						</Text>
-					</Content>
-					<Button onClick={onClick}>Let’s start</Button>
-				</Wrapper>
-			</Component>
-		</ModalTemplate>
+		<Component>
+			<Wrapper>
+				<Logo width={224} height={32} />
+				<Content>
+					<Title>Welcome to Macaron!</Title>
+					<Text size={'medium'}>
+						Thanks for signing up! <br />
+						We’re happy to see you here
+					</Text>
+				</Content>
+				<Button onClick={onClick}>Let’s start</Button>
+			</Wrapper>
+		</Component>
 	)
 }
 
@@ -35,6 +32,7 @@ const Component = styled.div`
 	}) => white};
 	width: 450px;
 	padding: 90px 56px 88px;
+	margin: 10px 0;
 	border-radius: ${({
 		theme: {
 			borderRadius: { big },
@@ -43,7 +41,11 @@ const Component = styled.div`
 
 	${theme.breakpoints.mobile} {
 		width: 100%;
-		padding: 85px 30px 88px;
+		padding: 85px 15px 88px;
+	}
+
+	${theme.breakpointsHeight.mobileS} {
+		height: 100%;
 	}
 `
 

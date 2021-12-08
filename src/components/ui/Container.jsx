@@ -5,4 +5,6 @@ export const Container = ({ children }) => {
 	return <Component>{children}</Component>
 }
 
-const Component = styled.div``
+const Component = styled.div`
+	height: 100%;
+`

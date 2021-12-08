@@ -51,7 +51,7 @@ const Form = styled.div`
 	}
 
 	${theme.breakpoints.mobile} {
-		padding: 0 32px;
+		padding: 12px 32px;
 		width: 100%;
 	}
 `

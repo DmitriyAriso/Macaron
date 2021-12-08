@@ -7,21 +7,30 @@ export const MainTemplate = ({ header, children }) => {
 	return (
 		<Template>
 			{header}
-			<Wrapper>
-				<Container>{children}</Container>
-			</Wrapper>
+			<Wrapper>{children}</Wrapper>
 		</Template>
 	)
 }
 
 const Template = styled.div``
 const Wrapper = styled.div`
-	height: calc(100vh - 73px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 	background: ${({
 		theme: {
 			pallet: { grey },
 		},
 	}) => grey};
+
+	${theme.breakpoints.mobile} {
+		background: ${({
+			theme: {
+				pallet: { white },
+			},
+		}) => white};
+	}
 
 	${theme.breakpoints.mobile} {
 		background: ${({

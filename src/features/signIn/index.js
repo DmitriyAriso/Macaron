@@ -20,18 +20,13 @@ export const SignIn = () => {
 const Component = styled.div`
 	display: grid;
 	grid-template-columns: 484px 434px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
 	box-shadow: ${({ theme: { shadows: dialog } }) => dialog};
-
+	margin: 10px 0;
 	${theme.breakpoints.tablet} {
 		grid-template-columns: 1fr;
 	}
 
 	${theme.breakpoints.mobile} {
-		top: 40%;
 		width: 100%;
 	}
 `

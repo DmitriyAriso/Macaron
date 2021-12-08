@@ -37,6 +37,14 @@ export const theme = {
 		laptop: `@media (max-width: 1280px)`,
 		desktop: `@media (max-width: 1850px)`,
 	},
+	breakpointsHeight: {
+		mobileXS: `@media screen and (max-height: 378px)`,
+		mobileS: `@media screen and (max-height: 475px)`,
+		mobile: `@media screen and (max-height: 541px)`,
+		tablet: `@media screen and (max-height: 960px)`,
+		laptop: `@media screen and (max-height: 1280px)`,
+		desktop: `@media screen and (max-height: 1850px)`,
+	},
 	contentPoints: {
 		mobile: '320px',
 		tablet: '640px',
