@@ -20,7 +20,7 @@ const Page = styled.div`
 	align-items: center;
 	height: calc(100vh - 74px);
 
-	${theme.breakpointsHeight.mobileXS} {
+	${theme.breakpointsHeight.mobile} {
 		height: 100%;
 	}
 `
